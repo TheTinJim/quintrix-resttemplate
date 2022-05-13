@@ -23,7 +23,7 @@ public class CarsController {
     RestTemplate restTemplate = new RestTemplate();
     String carResourceUrl = "http://localhost:8080/cars";
 
-    return restTemplate.postForEntity(carResourceUrl, car, null);
+    return restTemplate.postForEntity(carResourceUrl, car, String.class);
   }
 }
 
